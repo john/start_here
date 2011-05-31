@@ -1,0 +1,129 @@
+@import "compass/reset"
+@import "compass/typography"
+@import "compass/css3"
+@import "config"
+@import "zass"
+@import "fonts"
+@import "flash"
+
+//@import "spritely"
+//@import "spritely_sprites"
+
+body
+  @include serif_font
+  
+a
+  color: $link_color
+  
+em
+  font-style: italic
+  
+h1
+  font-weight: bold
+  font-size: 2em
+
+header
+  background-color: $top_bar_background-color
+  width: 100%
+  position: fixed
+  z-index: 1
+  top: 0
+  left: 0
+  height: $top_bar_height
+  
+  .container
+    @include centered_container($body_width)
+    
+    .left
+      @include float_left
+      
+      a#logo
+        @include dislay_font
+        @include float_left
+        display: inline
+        font-size: 1.7em
+        padding: 6px
+        margin: 10px 30px 0 0
+        color: $logo_color
+        //background-color: #7788ff
+        //background-color: #001188
+        background-color: $logo_background_color
+        text-decoration: none
+      
+      #search_box
+        position: relative
+        display: inline
+        @include float_left
+        //clear: both
+        @include border-radius(3px)
+        margin: 10px 0 0 0
+        background-color: $search_box_background_color_inactive
+        padding: 0
+        width: $search_box_width        
+        input.text
+          padding: 6px 0 0 7px
+          position: absolute
+          z-index: 50
+          background: transparent
+          border: none
+          outline: none
+          //@include sans_font
+          font-size: .9em
+          width: $search_box_width - $search_button_width
+          color: $search_box_input_color_inactive
+        input::-webkit-input-placeholder
+          //@include sans_font
+          color: #CCC
+        input:-moz-placeholder
+          //@include sans_font
+          color: #CCC
+        label
+          //@include sans_font
+          padding-left: 5px
+          position: relative
+          z-index: 49
+          top: 5px
+          left: 2px
+          font-size: .9em
+          color: #999
+          -moz-user-select: none
+          -khtml-user-select: none
+          user-select: none
+
+        input.submit
+          @include float_right
+          padding: 2px 3px 0 0
+          outline: none
+          
+          
+      #site_nav
+        @include float_left
+        margin: 17px 0 0 20px
+        color: #aaa
+        a
+          color: #aaa
+          @include underline_on_hover_only
+          &:hover
+            color: white
+            
+        
+    .right
+      @include float_right
+      ul
+        @include horizontal_list
+        margin: 15px 0 0 0
+        li
+          color: #aaa
+          a
+            color: #aaa
+            @include underline_on_hover_only
+            &:hover
+            color: white
+        
+footer
+  margin: 20px 0
+  
+#container
+  @include centered_container($body_width)
+  margin: 80px auto 80px auto
+  

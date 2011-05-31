@@ -1,0 +1,25 @@
+Use this README file to introduce your application and point to useful places in the API for learning more.
+Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+
+To start Mongo:
+/usr/local/mongo/bin/mongod --dbpath /usr/local/mongo/data
+
+or daemonized:
+/usr/local/mongo/bin/mongod --dbpath /usr/local/mongo/data --fork --logpath /var/log/mongodb.log --logappend
+
+TODO:
+- collect email on auth (if not provided by oauth)
+- ability to auth against multiple services for a single account
+  + when authing, compare email addresses, if they match offer to add a service to an existing account rather than creating a new one
+  
+  
+  
+Qwerly API keys are:
+
+Key: h7pd38n4bb377ssdjjg9pjar
+
+Application:reputedly Key: h7pd38n4bb377ssdjjg9pjar Status: active Registered: 1 second ago
+Rate Limits
+2	Calls per second
+1,000	Calls per month
+  

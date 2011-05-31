@@ -1,0 +1,57 @@
+javascripts:
+  common:
+    - 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'
+    - 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js'
+    - 'jquery.pause.min'
+    - 'rails' # For UJS
+    - 'google_analytics'
+    - 'facebook'
+    - 'configatron'
+    - 'application'
+
+# Everything in the 'common' namespace will become public-facing when published into configatron.js,
+# so don't put anything sensitive in here.
+# If you update something here, remember to run 'rake configatron:to_js'
+
+common:
+  sass:
+    logo_color: '#FFFFFF'
+    logo_background_color: '#6677AA'
+    link_color: '#1980D7'
+    link_color_dark: '#02649B'
+    hover_color: '#E6F2FB'
+    love_color: '#FF5123'
+    list_color: '#1374B9'
+    tag_color: '#56A61E'
+    associate_color: '#835B18'
+    comment_color: '#EF832C'
+    hear_color: '#A70057'
+    record_color: '#008586'
+    
+    top_bar_background-color: '#555555'
+    body_width: '960px'
+    main_column_width: '620px'
+    sidebar_width: '320px'
+    top_bar_height: '50px'
+
+    search_box_width: '200px'
+    search_button_width: '40px'
+    search_box_background_color_inactive: '#444444'
+    search_box_background_color_active: '#FFFFFF'
+    search_box_input_color_inactive: '#999999'
+    search_box_input_color_active: '#000000'
+
+# Any environment-specific settings should be specified here.
+# When config/initializers/_configatron.rb runs, it will load this stuff last.
+# environment.production.foo becomes configatron.foo (if Rails.env is production)
+# environment.development.bar.wibble becomes configatron.bar.wibble (if Rails.env is development)
+
+environment:
+  development:
+    phu: barh
+  test:
+    phu: barh
+  staging:
+    phu: barh
+  production:
+    phu: barh

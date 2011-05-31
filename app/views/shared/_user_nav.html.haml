@@ -1,0 +1,6 @@
+-if user_signed_in?
+  %li Logged in as #{current_user.name}
+  %li= link_to('Logout', signout_path)
+- else
+  %li Login with #{link_to('LinkedIn', '/auth/linked_in')}  or #{link_to('Twitter', '/auth/twitter')}
+  
