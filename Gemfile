@@ -1,17 +1,18 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc1'
-gem 'thin'
+gem 'rails', '3.1.0.rc2'
 
 gem 'haml'
 gem 'haml-rails'
+gem 'formtastic'
 gem 'compass'
 gem 'configatron'
+gem 'jquery-rails'
 gem 'headjs-rails'
 
-gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git'
+gem 'mongoid'
 gem 'bson_ext'
-gem 'omniauth', :git => 'git://github.com/intridea/omniauth.git'
+gem 'omniauth'
 
 gem 'typhoeus'
 
@@ -19,17 +20,6 @@ gem 'typhoeus'
 gem 'sass'
 gem 'coffee-script'
 gem 'uglifier'
-
-gem 'jquery-rails'
-
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :development do
   gem 'ruby-debug19'
