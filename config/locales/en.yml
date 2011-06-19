@@ -2,4 +2,5 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  search_placeholder: "You'll never find it"
+  app_name: 'Start_Here'
+  search_placeholder: 'Search'
