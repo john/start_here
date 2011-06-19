@@ -11,6 +11,7 @@ body
   
 a
   color: $link_color
+  @include underline_on_hover_only
   
 em
   font-style: italic
@@ -18,6 +19,10 @@ em
 h1
   font-weight: bold
   font-size: 2em
+  margin-bottom: 10px
+  
+p
+  margin-bottom: 15px
 
 header
   background-color: $top_bar_background-color
@@ -96,7 +101,6 @@ header
         color: #aaa
         a
           color: #aaa
-          @include underline_on_hover_only
           &:hover
             color: white
             
@@ -109,7 +113,6 @@ header
           color: #aaa
           a
             color: #aaa
-            @include underline_on_hover_only
             &:hover
             color: white
         

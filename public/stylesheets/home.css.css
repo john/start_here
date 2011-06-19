@@ -1,4 +1,4 @@
-/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 115, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 115, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails31/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -118,28 +118,39 @@ div.success a,
   color: #529214;
 }
 
-/* line 12, ../../app/assets/stylesheets/home.css.sass */
+/* line 9, ../../app/assets/stylesheets/home.css.sass */
 body {
   font-family: "EB Garamond", Georgia, serif;
 }
 
-/* line 15, ../../app/assets/stylesheets/home.css.sass */
+/* line 12, ../../app/assets/stylesheets/home.css.sass */
 a {
   color: #1980d7;
+  text-decoration: none;
+}
+/* line 24, ../../app/assets/stylesheets/_zass.sass */
+a:hover {
+  text-decoration: underline;
 }
 
-/* line 18, ../../app/assets/stylesheets/home.css.sass */
+/* line 16, ../../app/assets/stylesheets/home.css.sass */
 em {
   font-style: italic;
 }
 
-/* line 21, ../../app/assets/stylesheets/home.css.sass */
+/* line 19, ../../app/assets/stylesheets/home.css.sass */
 h1 {
   font-weight: bold;
   font-size: 2em;
+  margin-bottom: 10px;
 }
 
-/* line 25, ../../app/assets/stylesheets/home.css.sass */
+/* line 24, ../../app/assets/stylesheets/home.css.sass */
+p {
+  margin-bottom: 15px;
+}
+
+/* line 27, ../../app/assets/stylesheets/home.css.sass */
 header {
   background-color: #555555;
   width: 100%;
@@ -149,20 +160,20 @@ header {
   left: 0;
   height: 50px;
 }
-/* line 34, ../../app/assets/stylesheets/home.css.sass */
+/* line 36, ../../app/assets/stylesheets/home.css.sass */
 header .container {
   margin: 0px auto;
   padding: 0px;
   position: relative;
   width: 960px;
 }
-/* line 37, ../../app/assets/stylesheets/home.css.sass */
+/* line 39, ../../app/assets/stylesheets/home.css.sass */
 header .container .left {
   display: block;
   clear: none;
   float: left;
 }
-/* line 40, ../../app/assets/stylesheets/home.css.sass */
+/* line 42, ../../app/assets/stylesheets/home.css.sass */
 header .container .left a#logo {
   font-family: "Caudex", Georgia, serif;
   display: block;
@@ -194,7 +205,7 @@ header .container .left #search_box {
   padding: 0;
   width: 200px;
 }
-/* line 63, ../../app/assets/stylesheets/home.css.sass */
+/* line 62, ../../app/assets/stylesheets/home.css.sass */
 header .container .left #search_box input.text {
   padding: 6px 0 0 7px;
   position: absolute;
@@ -206,15 +217,15 @@ header .container .left #search_box input.text {
   width: 160px;
   color: #999999;
 }
-/* line 74, ../../app/assets/stylesheets/home.css.sass */
+/* line 73, ../../app/assets/stylesheets/home.css.sass */
 header .container .left #search_box input::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 77, ../../app/assets/stylesheets/home.css.sass */
+/* line 76, ../../app/assets/stylesheets/home.css.sass */
 header .container .left #search_box input:-moz-placeholder {
   color: #cccccc;
 }
-/* line 80, ../../app/assets/stylesheets/home.css.sass */
+/* line 79, ../../app/assets/stylesheets/home.css.sass */
 header .container .left #search_box label {
   padding-left: 5px;
   position: relative;
@@ -227,7 +238,7 @@ header .container .left #search_box label {
   -khtml-user-select: none;
   user-select: none;
 }
-/* line 93, ../../app/assets/stylesheets/home.css.sass */
+/* line 92, ../../app/assets/stylesheets/home.css.sass */
 header .container .left #search_box input.submit {
   display: block;
   clear: none;
@@ -235,7 +246,7 @@ header .container .left #search_box input.submit {
   padding: 2px 3px 0 0;
   outline: none;
 }
-/* line 99, ../../app/assets/stylesheets/home.css.sass */
+/* line 98, ../../app/assets/stylesheets/home.css.sass */
 header .container .left #site_nav {
   display: block;
   clear: none;
@@ -243,26 +254,21 @@ header .container .left #site_nav {
   margin: 17px 0 0 20px;
   color: #aaaaaa;
 }
-/* line 103, ../../app/assets/stylesheets/home.css.sass */
+/* line 102, ../../app/assets/stylesheets/home.css.sass */
 header .container .left #site_nav a {
   color: #aaaaaa;
-  text-decoration: none;
 }
-/* line 24, ../../app/assets/stylesheets/_zass.sass */
-header .container .left #site_nav a:hover {
-  text-decoration: underline;
-}
-/* line 106, ../../app/assets/stylesheets/home.css.sass */
+/* line 104, ../../app/assets/stylesheets/home.css.sass */
 header .container .left #site_nav a:hover {
   color: white;
 }
-/* line 110, ../../app/assets/stylesheets/home.css.sass */
+/* line 107, ../../app/assets/stylesheets/home.css.sass */
 header .container .right {
   display: block;
   clear: none;
   float: right;
 }
-/* line 112, ../../app/assets/stylesheets/home.css.sass */
+/* line 109, ../../app/assets/stylesheets/home.css.sass */
 header .container .right ul {
   float: none;
   clear: both;
@@ -278,27 +284,22 @@ header .container .right ul li {
   margin: 0;
   padding: 2px 10px;
 }
-/* line 115, ../../app/assets/stylesheets/home.css.sass */
+/* line 112, ../../app/assets/stylesheets/home.css.sass */
 header .container .right ul li {
   color: #aaaaaa;
 }
-/* line 117, ../../app/assets/stylesheets/home.css.sass */
+/* line 114, ../../app/assets/stylesheets/home.css.sass */
 header .container .right ul li a {
   color: #aaaaaa;
-  text-decoration: none;
   color: white;
 }
-/* line 24, ../../app/assets/stylesheets/_zass.sass */
-header .container .right ul li a:hover {
-  text-decoration: underline;
-}
 
-/* line 123, ../../app/assets/stylesheets/home.css.sass */
+/* line 119, ../../app/assets/stylesheets/home.css.sass */
 footer {
   margin: 20px 0;
 }
 
-/* line 126, ../../app/assets/stylesheets/home.css.sass */
+/* line 122, ../../app/assets/stylesheets/home.css.sass */
 #container {
   margin: 0px auto;
   padding: 0px;
