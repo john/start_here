@@ -1,4 +1,4 @@
-Reputedly::Application.routes.draw do
+StartHere::Application.routes.draw do
   
   root :to => 'home#index'
   resources :users, :only => [:show, :edit, :update]

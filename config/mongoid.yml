@@ -8,11 +8,11 @@ defaults: &defaults
 
 development:
   <<: *defaults
-  database: reputedly_development
+  database: start_here_development
 
 test:
   <<: *defaults
-  database: reputedly_test
+  database: start_here_test
 
 # set these environment variables on your prod server
 production:
