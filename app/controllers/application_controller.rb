@@ -1,7 +1,10 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery
   
-  layout 'reputedly'
+  # http://weblog.rubyonrails.org/2011/4/18/why-http-streaming
+  # uncomment to take advantage of http streaming (requires unicorn or other compatible server)
+  # stream
+  
+  protect_from_forgery
   
   helper_method :current_user
   helper_method :user_signed_in?

@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-  stream
   
   def index
     @users = User.all

@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  stream
   
   before_filter :authenticate_user!
   before_filter :correct_user?
