@@ -1,4 +1,4 @@
-== Reputedly
+== Start_Here
 
 This is a testbed for Rails 3.1 and Mongoid, and is meant to be a personal reference implementation for a modern rails stack using:
 
@@ -15,3 +15,9 @@ The app uses omniauth to connect to services like LinkedIn, Twitter, StackOverfl
 
 Initial setup based on Daniel Kehoe's excellent tutorial:
 https://github.com/RailsApps/rails3-mongoid-omniauth/wiki/Tutorial
+
+Layout largely based on Paul Irish's HTML5 Boilerplate:
+http://html5boilerplate.com/
+
+Sass mixins from Zass:
+https://github.com/zeke/zass
