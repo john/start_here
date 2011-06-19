@@ -21,17 +21,14 @@
   = stylesheet_link_tag('application')
   = stylesheet_link_tag 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/themes/base/jquery-ui.css'
   
-  -# consider using google's webfont loader: http://code.google.com/apis/webfonts/docs/webfont_loader.html
+  -# Consider using google's webfont loader: http://code.google.com/apis/webfonts/docs/webfont_loader.html
   %link{:href => 'http://fonts.googleapis.com/css?family=Caudex', :rel => 'stylesheet', :type => 'text/css'}
   %link{:href => 'http://fonts.googleapis.com/css?family=EB+Garamond', :rel => 'stylesheet', :type => 'text/css'}
   
   = csrf_meta_tags
   
-  -# Right now jQuery & jQuery UI are part of application.js.
-  -# If you prefer to use Google's CDN, remove from application.js and uncomment the lines below
-  -# = javascript_include_tag "javascripts/modernizr-1.7.min.js"
-  -# = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"
-  -# = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"
+  -# Includes modernizr 2.0.4 You may want to regenerate it without the options you're not using,
+  -# to reduce it's weight: http://www.modernizr.com/download/
   = javascript_include_tag "application"
   
 %body

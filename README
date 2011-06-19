@@ -1,6 +1,6 @@
 == Start_Here
 
-This is a testbed for Rails 3.1 and Mongoid, and is meant to be a personal reference implementation for a modern rails stack using:
+This is a testbed for Rails 3.1 and Mongoid, and is meant to be a personal reference implementation for a rails stack using:
 
 - rails 3.1
 - mongoid
@@ -11,7 +11,8 @@ This is a testbed for Rails 3.1 and Mongoid, and is meant to be a personal refer
 - configatron
 - rspec/cucumber/capybara
 
-The app uses omniauth to connect to services like LinkedIn, Twitter, StackOverflow, Quora, and others, and aggregate some of the information it finds.
+Fill in the blanks at /config/deploy.rb to use Capistrano for deployment. It's configured to work with bundler:
+https://github.com/capistrano/capistrano
 
 Initial setup based on Daniel Kehoe's excellent tutorial:
 https://github.com/RailsApps/rails3-mongoid-omniauth/wiki/Tutorial
