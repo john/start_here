@@ -9,4 +9,13 @@ module ApplicationHelper
     items.join(' &nbsp; &#183; &nbsp; ').html_safe
   end
   
+  def footer
+    items = []
+    items << link_to('home', root_path)
+    items << link_to('about', about_path)
+    items << link_to('terms', terms_path)
+    items << link_to('privacy', privacy_path)
+    items.join(' &nbsp; &#183; &nbsp; ').html_safe
+  end
+  
 end

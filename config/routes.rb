@@ -3,9 +3,9 @@ StartHere::Application.routes.draw do
   root :to => 'home#index'
   resources :users, :only => [:show, :edit, :update]
   
-  get "home/about"
-  get "home/privacy"
-  get "home/terms"
+  get "home/about", :as => :about
+  get "home/privacy", :as => :privacy
+  get "home/terms", :as => :terms
   
   match '/signin' => 'sessions#new', :as => :signin
   match '/auth/:provider/callback' => 'sessions#create'
