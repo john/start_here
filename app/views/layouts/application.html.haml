@@ -8,31 +8,38 @@
   %meta{:charset => 'utf-8'}
   %meta{'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge,chrome=1'}
   
-  %title= (@title) ? @title : 'Reputedly'
+  %title= (@title) ? @title : 'Start_Here'
   
-  %meta{:name => 'description', :content => 'Reputedly, reputedly.'}
+  %meta{:name => 'description', :content => ''}
+  -# Mobile viewport optimized: j.mp/bplateviewport
   %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1.0'}
+  
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  %link{:rel => 'shortcut icon', :href => '/favicon.ico'}
+  %link{:rel => 'apple-touch-icon', :href => '/apple-touch-icon.png'}
   
   = stylesheet_link_tag('application')
   = stylesheet_link_tag 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/themes/base/jquery-ui.css'
   
-  -# consider using google's webfont loader
-  <link href='http://fonts.googleapis.com/css?family=Caudex' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  -# consider using google's webfont loader: http://code.google.com/apis/webfonts/docs/webfont_loader.html
+  %link{:href => 'http://fonts.googleapis.com/css?family=Caudex', :rel => 'stylesheet', :type => 'text/css'}
+  %link{:href => 'http://fonts.googleapis.com/css?family=EB+Garamond', :rel => 'stylesheet', :type => 'text/css'}
   
   = csrf_meta_tags
   
-  = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"
-  = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"
+  -# Right now jQuery & jQuery UI are part of application.js.
+  -# If you prefer to use Google's CDN, remove from application.js and uncomment the lines below
+  -# = javascript_include_tag "javascripts/modernizr-1.7.min.js"
+  -# = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"
+  -# = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"
   = javascript_include_tag "application"
-  -#= javascript_include_tag "javascripts/modernizr-1.7.min.js"
   
 %body
   
   %header
     .container
       .left
-        = link_to('Reputedly', root_path, :id => 'logo')
+        = link_to t('app_name'), root_path, :id => 'logo'
         
         -# #search_box
         -#   = form_tag("/search/", :method => :post, :id => 'search_form') do
