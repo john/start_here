@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Reputedly::Application.load_tasks
+StartHere::Application.load_tasks
