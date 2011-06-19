@@ -3,8 +3,6 @@ class User
   include Mongoid::Paranoia
   include Mongoid::Timestamps
   
-  attr_accessible :provider, :uid, :name, :email, :status, :remote_ip
-  
   field :provider, :type => String
   field :uid, :type => String
   field :name, :type => String
